@@ -1,7 +1,24 @@
-﻿/// <reference path="typings/impress/impress.d.ts" />
+﻿/**
+ *  File name: game.ts
+ *  Author: Kevin Ma (Student #300867968)
+ *
+ *  Description: This is the main typescript file that controls all
+ *               the functionalities of the web game.
+ *
+ *  Date Created: June 11, 2016
+ *  Date Last Modified: June 11, 2016
+ *  Version: 0.2 - added internal documentation
+ */
 
-//IIFE
+/// <reference path="typings/impress/impress.d.ts" />
+
+/**
+ * This immediately invoked function expression (IIFE) will be used
+ * in order to load all the functionalities of the game when the
+ * webpage loads.
+ */
 (function () {
+    // Initializations ++++++++++++++++++++++++++++++++++++
     "use strict";
     console.log("Game started...");
     impress().init();
