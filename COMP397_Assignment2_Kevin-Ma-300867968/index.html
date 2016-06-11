@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--mobile-->
+    <title>Game of Survival</title>
+
+    <!--CSS Section-->
+    <link href="Content/css/reset.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="impress">
+        <!--Game Start Menu-->
+        <div id="0" class="step slide">
+            <div class="slide-text">
+                <h1 class="text-center text-capitalize">game of surival</h1><br />
+                <div class="menu">
+                    <br />
+                    <a href="#1" class="btn btn-primary option-links">Start Game</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Stage1-->
+        <div id="1" class="step slide" data-y="1500">
+            <div class="slide-text">
+                <p>Here is a time machine!</p>
+                <p><a href="#2">FLIP</a> it.</p>
+                <p><a href="#3">WAIT</a> more.</p>
+            </div>
+        </div>
+
+        <!--Stage 2.1-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p>You went back in time!</p>
+            </div>
+            <div class="menu"><a href="#1">START OVER</a></div>
+        </div>
+
+        <!--Stage 2.2-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p>It's too late now, go to sleep</p>
+            </div>
+            <div class="menu"><a href="#1">START OVER</a></div>
+        </div>
+
+        <!--Stage 3.1-->
+        <!--Stage 3.2-->
+        <!--Stage 3.3-->
+        <!--Stage 3.4-->
+        <!--Stage 4A-->
+        <!--Stage 4B-->
+        <!--Stage 4C-->
+        <div id="4" class="step slide" data-z="-1500">
+            <div class="slide-text">
+                <p>GAME OVER</p>
+            </div>
+            <div class="menu"><a href="#1">START OVER</a></div>
+        </div>
+    </div>
+
+    <div id="stats-display" class="panel panel-default">
+        <div class="panel-heading">
+            <h3>Game Statistics</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                Current Strength: <span id="str">-</span>
+            </p>
+            <p>
+                Hours Remaining: <span id="time">-</span>
+            </p>
+        </div>
+    </div>
+
+    <!--JavaScript Section-->
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/libs/impress.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
