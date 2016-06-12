@@ -7,7 +7,7 @@
 
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.5 - renamed variables and div id's to reflect respective functionalities
+    Version: 0.6 added enemy statistics to the game
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +81,7 @@
 
         <!--2nd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage 2.1 Forest of Origins-->
-        <div id="#stage2.1-stage1-choice1" class="step slide" data-x="-1500" data-y="1500">
+        <div id="stage2.1-stage1-choice1" class="step slide" data-x="-1500" data-y="1500">
             <div class="slide-text">
                 <h2>Forest of Origins</h2>
                 <p>
@@ -111,7 +111,7 @@
             <div class="slide-text">
                 <h2>Mysterious Light</h2>
                 <p>
-                    You approach the light source. You discover a sword that is 
+                    You approach the light source. You discover a sword that is
                     emitting radiant light from its blade.
                 </p>
                 What do you do?
@@ -173,13 +173,13 @@
                 <div class="menu">
                     <!--First Choice-->
                     <span class="quote-text">"I will be the one to live on!"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
+                    <a href="#result1" class="btn btn-block btn-warning">
                         Engage the adversary in a fist fight to the death!
                     </a>
                     <p></p>
                     <!--Second Choice-->
                     <span class="quote-text">"Let's stay calm to resolve this..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
+                    <a href="#result2" class="btn btn-block btn-danger">
                         Discuss with the other person to find a way that you can both
                         survive.
                     </a>
@@ -237,38 +237,50 @@
                 </div>
             </div>
         </div>
-
-        <!--Stage 4.1 Sheath to Eye-->
-        <!--Stage 4.2 Center of Island-->
-        <!--Stage 4.3 Confront Villain-->
-        <!--Stage 4.4-->
+        <!--Resulting Stages +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--Result Stage 1 Sheath to Eye-->
+        <!--Result Stage 2 Too Late-->
+        <!--Result Stage 3 Stalemate Fight-->
+        <!--Result Stage 4 -->
+        <!--Result Stage 5 -->
+        <!--Result Stage 6 -->
+        <!--Result Stage 7 -->
+        <!--Result Stage 8 -->
         <!--Stage 4.5-->
         <!--Stage 4.6-->
         <!--Stage 4.7-->
         <!--Stage 4.8-->
-        <!--Result Stage 1-->
-        <!--Result Stage 2-->
-        <!--Result Stage 3-->
-        <!--Result Stage 4-->
-        <!--Result Stage 5-->
-        <!--Result Stage 6-->
-        <!--Result Stage 7-->
-        <!--Result Stage 8-->
+        <!--Game Over Stage-->
+        <!--Win Stage-->
 
-    </div>
-
-  
+    </div> <!--End impress div-->
     <!--Game Statistics ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--Your Game Statistics (shown in top right hand corner)-->
     <div class="panel panel-default pull-right stats-display">
         <div class="panel-heading">
-            <h3>Game Statistics</h3>
+            <h3>Your Statistics</h3>
         </div>
         <div class="panel-body">
             <p>
                 Current Strength: <span id="str">-</span>
             </p>
             <p>
-                Hours Remaining: <span id="time">-</span>
+                Hours Remaining: <span class="time">-</span>
+            </p>
+        </div>
+    </div>
+
+    <!--The other player's (your enemy) game statistics (only shown when you see them)-->
+    <div id="enemyStats" class="panel panel-default pull-left stats-display">
+        <div class="panel-heading">
+            <h3>Enemy's Stats</h3>
+        </div>
+        <div class="panel-body">
+            <p>
+                Enemy Strength: <span id="enemyStr">-</span>
+            </p>
+            <p>
+                Hours Remaining: <span class="time">-</span>
             </p>
         </div>
     </div>
