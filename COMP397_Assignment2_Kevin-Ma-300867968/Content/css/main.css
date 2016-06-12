@@ -5,8 +5,8 @@
     Description: This is the main css file that will be used to style everything.
     
     Date Created: June 11, 2016
-    Date Last Modified: June 11, 2016
-    Version: 0.2 - added internal documentation
+    Date Last Modified: June 12, 2016
+    Version: 0.3 - added game instructions, first few stages are functioning properly
 */
 
 body {
@@ -77,15 +77,19 @@ div.menu {
 }
 
 /*Used to style the game status window*/
-#stats-display{
-    margin-right:1vw;
-    margin-top:1vh;
+.stats-display{
+    margin:1vh 1vw;
     background-color: #cde;
 }
 
 h1{
     font-size:15vh;
     font-family:'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size:10vh;
+    font-family:Garamond;
 }
 
 /*Used to style the in game options*/
