@@ -7,7 +7,7 @@
  *
  *  Date Created: June 11, 2016
  *  Date Last Modified: June 12, 2016
- *  Version:  0.4 - 2nd decision level stages are functioning properly
+ *  Version:  0.5 - renamed variables and div id's to reflect respective functionalities
  */
 
 /// <reference path="typings/impress/impress.d.ts" />
@@ -25,28 +25,34 @@
 
     // Game Variables ++++++++++++++++++++++++++++++++++++++
     var strength: number;
+    var enemyStrength: number;
     var hoursRemaining: number;
     var gameOver: boolean = false;
 
     // Event Listeners +++++++++++++++++++++++++++++++++++++
     $('a').on('click', function () {
 
-        var destination = this.href.charAt(this.href.length - 1);
+        // assign the name of the div that the anchor will go to, to this var
+        var destination = this.href.substring(this.href.indexOf('#') + 1);
 
+        console.log(this.href);
         console.log("destination: " + destination);
-        //if (lastActiveDiv == '1' && gameOver) {
-        //    gameOver = false;
-        //    strength = 10;
-        //    hoursRemaining = 10;
-        //}
-        switch (destination) {
 
-            case "1":
+        /**
+            This switch serves as a trigger board. It handles
+            different events which occur during the storyline
+            of the game.
+        */
+        switch (destination) {
+            // The story begins at div id #1, need to initialize variables
+            case "stage1":
                 strength = 10;
+                enemyStrength = 30;
                 hoursRemaining = 10;
                 break;
-            case "2":
-                strength += 20;
+            case "stage2.1-stage1-choice1":
+                strength += 20; // from push-ups
+                enemyStrength += 100; // because you did not take sword, enemy did
                 break;
         }
 

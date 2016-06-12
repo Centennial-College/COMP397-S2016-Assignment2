@@ -7,7 +7,7 @@
 
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.4 - 2nd decision level stages are functioning properly
+    Version: 0.5 - renamed variables and div id's to reflect respective functionalities
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -25,18 +25,18 @@
 
     <div id="impress">
         <!--Game Start Menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-        <div id="Game" class="step slide">
+        <div id="game" class="step slide">
             <div class="slide-text">
                 <h1 class="text-center text-capitalize">game of surival</h1><br />
                 <div class="menu">
                     <br />
-                    <a href="#0" class="btn btn-block btn-primary option-links">Next</a>
+                    <a href="#instructions" class="btn btn-block btn-primary option-links">Next</a>
                 </div>
             </div>
         </div>
 
         <!--In-Game Instructions ++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-        <div id="0" class="step slide" data-y="500">
+        <div id="instructions" class="step slide" data-y="500">
             <div class="slide-text">
                 <h2>Instructions</h2>
                 <p style="font-size: 2.5vmin; margin-top:0;">
@@ -48,13 +48,13 @@
                     targetting the island and anyone remaining on the island will
                     be killed. Good luck escaping the island!
                 </p>
-                <a href="#1" class="btn btn-block btn-danger option-links">Start Game</a>
+                <a href="#stage1" class="btn btn-block btn-danger option-links">Start Game</a>
             </div>
         </div>
 
         <!--1st Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage1 Forest of Origins-->
-        <div id="1" class="step slide" data-y="1500">
+        <div id="stage1" class="step slide" data-y="1500">
             <div class="slide-text">
                 <h2>Forest of Origins</h2>
                 <p>
@@ -63,14 +63,16 @@
                 </p>
                 What do you do?
                 <div class="menu">
+                    <!--First Choice-->
                     <span class="quote-text">"That looks like a trap."</span>
-                    <a href="#2" class="btn btn-block btn-warning">
+                    <a href="#stage2.1-stage1-choice1" class="btn btn-block btn-warning">
                         Remain where you are standing and observe the situation for a while
                         longer.
                     </a>
                     <p></p>
+                    <!--Second Choice-->
                     <span class="quote-text">"Ooo SHINY!"</span>
-                    <a href="#3" class="btn btn-block btn-danger">
+                    <a href="#stage2.2-stage1-choice2" class="btn btn-block btn-danger">
                         Head towards the light source.
                     </a>
                 </div>
@@ -79,7 +81,7 @@
 
         <!--2nd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage 2.1 Forest of Origins-->
-        <div id="2" class="step slide" data-x="-1500" data-y="1500">
+        <div id="#stage2.1-stage1-choice1" class="step slide" data-x="-1500" data-y="1500">
             <div class="slide-text">
                 <h2>Forest of Origins</h2>
                 <p>
@@ -89,13 +91,15 @@
                 <p>Then the light suddenly vanishes!</p>
                 What do you do?
                 <div class="menu">
+                    <!--First Choice-->
                     <span class="quote-text">"What was that?"</span>
-                    <a href="#4" class="btn btn-block btn-warning">
+                    <a href="#stage3.1-stage2.1-choice1" class="btn btn-block btn-warning">
                         Head towards where the mysterious light was once shining from.
                     </a>
                     <p></p>
+                    <!--Second Choice-->
                     <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#5" class="btn btn-block btn-danger">
+                    <a href="#stage3.2-stage2.1-choice2" class="btn btn-block btn-danger">
                         Escape from the forest.
                     </a>
                 </div>
@@ -103,7 +107,7 @@
         </div>
 
         <!--Stage 2.2 Mysterious Light-->
-        <div id="3" class="step slide" data-x="1500" data-y="1500">
+        <div id="stage2.2-stage1-choice2" class="step slide" data-x="1500" data-y="1500">
             <div class="slide-text">
                 <h2>Mysterious Light</h2>
                 <p>
@@ -112,14 +116,16 @@
                 </p>
                 What do you do?
                 <div class="menu">
+                    <!--First Choice-->
                     <span class="quote-text">"It's so shiny! I want it!"</span>
-                    <a href="#6" class="btn btn-block btn-warning">
+                    <a href="#stage3.3-stage2.2-choice1" class="btn btn-block btn-warning">
                         Take the sword and quickly run into the forest before
                         anyone sees you.
                     </a>
                     <p></p>
+                    <!--Second Choice-->
                     <span class="quote-text">"This is too good to be true."</span>
-                    <a href="#7" class="btn btn-block btn-danger">
+                    <a href="#stage3.4-stage2.2-choice2" class="btn btn-block btn-danger">
                         Quickly escape from the forest to avoid falling into
                         the obvious trap laid before you.
                     </a>
@@ -129,69 +135,75 @@
 
         <!--3rd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage 3.1 Mysterious Darkness-->
-        <div id="4" class="step slide" data-x="-3000" data-y="3000">
+        <div id="stage3.1-stage2.1-choice1" class="step slide" data-x="-3000" data-y="3000">
             <div class="slide-text">
-                <h2>Mysterious Darkness</h2>
+                <h2>Void of Darkness</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    You discover the sheath of a sword lying in place of where
+                    the light was once shining from. From inside  the sheath, you
+                    can see an eerie darkness swirling around.
                 </p>
-                <p>Then the light suddenly vanishes!</p>
                 What do you do?
                 <div class="menu">
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
+                    <!--First Choice-->
+                    <span class="quote-text">"That looks really interesting!"</span>
+                    <a href="#8" class="btn btn-block btn-warning">
+                        Bring the sheath towards your eye so you can peak into the
+                        darkness.
                     </a>
                     <p></p>
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
+                    <!--Second Choice-->
+                    <span class="quote-text">"That looks really scary!"</span>
+                    <a href="#9" class="btn btn-block btn-danger">
+                        Quickly escape from the forest.
                     </a>
                 </div>
             </div>
         </div>
 
         <!--Stage 3.2 Center of Island-->
-        <div id="5" class="step slide" data-x="-1500" data-y="3000">
+        <div id="stage3.2-stage2.1-choice2" class="step slide" data-x="-1500" data-y="3000">
             <div class="slide-text">
-                <h2>Center of the Island</h2>
+                <h2>Island's Heart</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    You arrive at the center of the island and discover
+                    both the portal to escape as well as the other person.
                 </p>
-                <p>Then the light suddenly vanishes!</p>
                 What do you do?
                 <div class="menu">
-                    <span class="quote-text">"What was that?"</span>
+                    <!--First Choice-->
+                    <span class="quote-text">"I will be the one to live on!"</span>
                     <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
+                        Engage the adversary in a fist fight to the death!
                     </a>
                     <p></p>
-                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Let's stay calm to resolve this..."</span>
                     <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
+                        Discuss with the other person to find a way that you can both
+                        survive.
                     </a>
                 </div>
             </div>
         </div>
 
         <!--Stage 3.3 Center of Island-->
-        <div id="6" class="step slide" data-x="1500" data-y="3000">
+        <div id="stage3.3-stage2.2-choice1" class="step slide" data-x="1500" data-y="3000">
             <div class="slide-text">
                 <h2>Center of the Island</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    You take the sword and gained [+100 STR]
                 </p>
                 <p>Then the light suddenly vanishes!</p>
                 What do you do?
                 <div class="menu">
+                    <!--First Choice-->
                     <span class="quote-text">"What was that?"</span>
                     <a href="#2" class="btn btn-block btn-warning">
                         Head towards where the mysterious light was once shining from.
                     </a>
                     <p></p>
+                    <!--Second Choice-->
                     <span class="quote-text">"Well this is getting boring..."</span>
                     <a href="#3" class="btn btn-block btn-danger">
                         Escape from the forest.
@@ -201,7 +213,7 @@
         </div>
 
         <!--Stage 3.4 Center of Island-->
-        <div id="7" class="step slide" data-x="3000" data-y="3000">
+        <div id="stage3.4-stage2.2-choice2" class="step slide" data-x="3000" data-y="3000">
             <div class="slide-text">
                 <h2>Center of the Island</h2>
                 <p>
@@ -211,11 +223,13 @@
                 <p>Then the light suddenly vanishes!</p>
                 What do you do?
                 <div class="menu">
+                    <!--First Choice-->
                     <span class="quote-text">"What was that?"</span>
                     <a href="#2" class="btn btn-block btn-warning">
                         Head towards where the mysterious light was once shining from.
                     </a>
                     <p></p>
+                    <!--Second Choice-->
                     <span class="quote-text">"Well this is getting boring..."</span>
                     <a href="#3" class="btn btn-block btn-danger">
                         Escape from the forest.
