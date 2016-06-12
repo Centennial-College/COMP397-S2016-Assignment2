@@ -6,7 +6,7 @@
     
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version:  0.4 - 2nd decision level stages are functioning properly
+    Version:  0.8 - added a overflow enabled scrolling events log
 */
 
 body {
@@ -78,8 +78,28 @@ div.menu {
 
 /*Used to style the game status window*/
 .stats-display {
+    float: right;
     margin: 1vh 1vw;
     background-color: #cde;
+}
+
+/*Used to style the events log window*/
+.evt-log {
+    margin: 5vh 1vw;
+    background-color: #def;
+    width: 20vw;
+    height: 50vh;
+    float: right;
+    clear: right;
+}
+
+.evt-log-heading {
+    height: 10vh;
+}
+
+.evt-log-body {
+    height: 40vh;
+    overflow-y: scroll;
 }
 
 h1 {
