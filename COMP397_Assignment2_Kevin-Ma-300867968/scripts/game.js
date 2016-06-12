@@ -1,14 +1,14 @@
 /**
- *  File name: game.ts
- *  Author: Kevin Ma (Student #300867968)
- *
- *  Description: This is the main typescript file that controls all
- *               the functionalities of the web game.
- *
- *  Date Created: June 11, 2016
- *  Date Last Modified: June 12, 2016
- *  Version:  0.6 added enemy statistics to the game
- */
+*  File name: game.ts
+*  Author: Kevin Ma (Student #300867968)
+*
+*  Description: This is the main typescript file that controls all
+*               the functionalities of the web game.
+*
+*  Date Created: June 11, 2016
+*  Date Last Modified: June 12, 2016
+*  Version:  0.6 added enemy statistics to the game
+*/
 /// <reference path="typings/impress/impress.d.ts" />
 /**
  * This immediately invoked function expression (IIFE) will be used
@@ -69,3 +69,4 @@
     console.log(strength);
     console.log(hoursRemaining);
 })();
+//# sourceMappingURL=game.js.map

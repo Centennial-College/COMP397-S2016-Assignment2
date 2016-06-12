@@ -7,7 +7,7 @@
 
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.6 added enemy statistics to the game
+    Version: 0.7 - re-calculated all vertical and horizontal positions of the stage alignments
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@
 <body>
 
     <div id="impress">
-        <!--Game Start Menu ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--Game Start Menu +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <div id="game" class="step slide">
             <div class="slide-text">
                 <h1 class="text-center text-capitalize">game of surival</h1><br />
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <!--In-Game Instructions ++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--In-Game Instructions ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <div id="instructions" class="step slide" data-y="500">
             <div class="slide-text">
                 <h2>Instructions</h2>
@@ -79,7 +79,7 @@
             </div>
         </div>
 
-        <!--2nd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--2nd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage 2.1 Forest of Origins-->
         <div id="stage2.1-stage1-choice1" class="step slide" data-x="-1500" data-y="1500">
             <div class="slide-text">
@@ -133,7 +133,7 @@
             </div>
         </div>
 
-        <!--3rd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--3rd Decision Level +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Stage 3.1 Mysterious Darkness-->
         <div id="stage3.1-stage2.1-choice1" class="step slide" data-x="-3000" data-y="3000">
             <div class="slide-text">
@@ -237,24 +237,272 @@
                 </div>
             </div>
         </div>
-        <!--Resulting Stages +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+        <!--Resulting Stages +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
         <!--Result Stage 1 Sheath to Eye-->
+        <div id="result1-stage3.1-choice1" class="step slide" data-x="-6000" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!--Result Stage 2 Too Late-->
+        <div id="result2-stage3.1-choice2" class="step slide" data-x="-4500" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!--Result Stage 3 Stalemate Fight-->
-        <!--Result Stage 4 -->
-        <!--Result Stage 5 -->
-        <!--Result Stage 6 -->
-        <!--Result Stage 7 -->
-        <!--Result Stage 8 -->
-        <!--Stage 4.5-->
-        <!--Stage 4.6-->
-        <!--Stage 4.7-->
-        <!--Stage 4.8-->
+        <div id="result3-stage3.2-choice1" class="step slide" data-x="-3000" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Result Stage 4 Enemy backstabs you-->
+        <div id="result4-stage3.2-choice2" class="step slide" data-x="-1500" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Result Stage 5 Kill Enemy-->
+        <div id="result5-stage3.3-choice1" class="step slide" data-x="1500" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Result Stage 6 Failed peaceful resolution-->
+        <div id="result6-stage3.3-choice2" class="step slide" data-x="3000" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Result Stage 7 Enemy Kills you-->
+        <div id="result7-stage3.4-choice1" class="step slide" data-x="4500" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Result Stage 8 Enemy refuses to collaborate with you-->
+        <div id="result8-stage3.4-choice2" class="step slide" data-x="6000" data-y="4500">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Game Ending Stages +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <!--Use TypeScript to change contents of Game Over and Win Stages, to avoid multiple stages-->
         <!--Game Over Stage-->
+        <div id="game-over" class="step slide" data-x="-3000" data-y="6000">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <!--Win Stage-->
+        <div id="win-game" class="step slide" data-x="3000" data-y="6000">
+            <div class="slide-text">
+                <h2>Center of the Island</h2>
+                <p>
+                    ...Nothing happens.
+                    You become bored and do 20 push-ups. (+20 STR)<br />
+                </p>
+                <p>Then the light suddenly vanishes!</p>
+                What do you do?
+                <div class="menu">
+                    <!--First Choice-->
+                    <span class="quote-text">"What was that?"</span>
+                    <a href="#2" class="btn btn-block btn-warning">
+                        Head towards where the mysterious light was once shining from.
+                    </a>
+                    <p></p>
+                    <!--Second Choice-->
+                    <span class="quote-text">"Well this is getting boring..."</span>
+                    <a href="#3" class="btn btn-block btn-danger">
+                        Escape from the forest.
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </div> <!--End impress div-->
-    <!--Game Statistics ++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <!--Game Statistics +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <!--Your Game Statistics (shown in top right hand corner)-->
     <div class="panel panel-default pull-right stats-display">
         <div class="panel-heading">
