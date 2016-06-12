@@ -27,8 +27,9 @@
     console.log("Game started...");
     impress().init();
     evtLog = ""; // the log is initially empty
-    // Keep enemy's statistics window hidden until encounter
     $('#enemyStats').hide();
+    $('#events-log').hide();
+    $('#playerStats').hide();
     // EVENT LISTENERS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     $('a').on('click', function () {
         // assign the name of the div that the anchor will go to, to this var
@@ -43,6 +44,8 @@
         switch (destination) {
             // The story begins at div id #stage1, need to initialize variables
             case "stage1":
+                $('#events-log').show();
+                $('#playerStats').show();
                 strength = 90;
                 enemyStrength = 10;
                 hoursRemaining = 10;

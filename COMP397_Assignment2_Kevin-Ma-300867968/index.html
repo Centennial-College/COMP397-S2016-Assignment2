@@ -7,7 +7,7 @@
 
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.8 - added a overflow enabled scrolling events log
+    Version: 0.8.1 - modified panels to look like windows panels
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -503,7 +503,7 @@
     </div> <!--End impress div-->
     <!--GAME STATISTICS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     <!--Your Game Statistics (shown in top right hand corner)-->
-    <div class="panel panel-default stats-display">
+    <div id="playerStats" class="panel panel-default stats-display">
         <div class="panel-heading text-center">
             <h3>Your Statistics</h3>
         </div>
@@ -533,7 +533,7 @@
     </div>
 
     <!--Events Log Window (shows the change in game statistics after each selection)-->
-    <div class="panel panel-default evt-log">
+    <div id="events-log" class="panel panel-default evt-log">
         <div class="panel-heading evt-log-heading text-center">
             <h3>Events Log</h3>
         </div>
