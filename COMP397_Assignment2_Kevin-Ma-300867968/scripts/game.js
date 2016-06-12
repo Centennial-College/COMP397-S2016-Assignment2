@@ -7,7 +7,7 @@
  *
  *  Date Created: June 11, 2016
  *  Date Last Modified: June 12, 2016
- *  Version: 0.3 - added game instructions, first few stages are functioning properly
+ *  Version:  0.4 - 2nd decision level stages are functioning properly
  */
 /// <reference path="typings/impress/impress.d.ts" />
 /**
@@ -39,7 +39,7 @@
                 hoursRemaining = 10;
                 break;
             case "2":
-                strength += 100;
+                strength += 20;
                 break;
         }
         //if (destination == '2') {

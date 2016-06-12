@@ -6,16 +6,16 @@
     
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.3 - added game instructions, first few stages are functioning properly
+    Version:  0.4 - 2nd decision level stages are functioning properly
 */
 
 body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
-    background: #1e5799; /* Old browsers */
-    background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .impress-enabled .step {
@@ -77,22 +77,26 @@ div.menu {
 }
 
 /*Used to style the game status window*/
-.stats-display{
-    margin:1vh 1vw;
+.stats-display {
+    margin: 1vh 1vw;
     background-color: #cde;
 }
 
-h1{
-    font-size:15vh;
-    font-family:'Times New Roman', Times, serif;
+h1 {
+    font-size: 15vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h2{
-    font-size:10vh;
-    font-family:Garamond;
+h2 {
+    font-size: 10vh;
+    font-family: Garamond;
+}
+
+.quote-text {
+    font-style: italic;
 }
 
 /*Used to style the in game options*/
-.option-links{
-    font-size:5vh;
+.option-links {
+    font-size: 5vh;
 }
