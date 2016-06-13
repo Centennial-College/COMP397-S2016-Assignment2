@@ -1,14 +1,14 @@
 /**
- *  File name: game.ts
- *  Author: Kevin Ma (Student #300867968)
- *
- *  Description: This is the main typescript file that controls all
- *               the functionalities of the web game, Game of Survival.
- *
- *  Date Created: June 11, 2016
- *  Date Last Modified: June 13, 2016
- *  Version:  1.2 - refactored trigger board into switch and re-calculated time
- */
+*  File name: game.ts
+*  Author: Kevin Ma (Student #300867968)
+*
+*  Description: This is the main typescript file that controls all
+*               the functionalities of the web game, Game of Survival.
+*
+*  Date Created: June 11, 2016
+*  Date Last Modified: June 13, 2016
+*  Version:  1.2 - refactored trigger board into switch and re-calculated time
+*/
 /// <reference path="typings/impress/impress.d.ts" />
 /**
  * This immediately invoked function expression (IIFE) will be used
@@ -183,3 +183,4 @@
         $('#evt-log-body').html(evtLog + $('#evt-log-body').html());
     }); // End of the anchor click event listener
 })(); // End of IIFE
+//# sourceMappingURL=game.js.map
