@@ -3,11 +3,11 @@
     Author: Kevin Ma (Student #300867968)
 
     Description: This is a choose-your-own-adventure Web Game designed using the State
-                 Machine Design Pattern.
+                 Machine Design Pattern and the impress.js library.
 
     Date Created: June 11, 2016
     Date Last Modified: June 12, 2016
-    Version: 0.9.1 - created and added favicon
+    Version: 0.10 - connected all paths flow from beginning to end
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -42,14 +42,14 @@
                 <h2>Instructions</h2>
                 <p style="font-size: 2.5vmin; margin-top:0;">
                     Including you, there are two people on the stranded island.
-                    You are given XX hours to head to the center of the island.
+                    You are given 10 hours to head to the center of the island.
                     At the center you will enter a portal and be able to safely
                     escape. Only one person is permitted to use the portal to
-                    escape. After XX hours have passed, missles will be launched
+                    escape. After 10 hours have passed, nuclear missles will be launched
                     targetting the island and anyone remaining on the island will
                     be killed. Good luck escaping the island!
                 </p>
-                <a href="#stage1" class="btn btn-block btn-danger option-links">Start Game</a>
+                <a href="#stage1" class="btn btn-block btn-info option-links">Start Game</a>
             </div>
         </div>
 
@@ -181,7 +181,7 @@
                     <!--Second Choice-->
                     <span class="quote-text">"Let's stay calm to resolve this..."</span>
                     <a href="#result4-stage3.2-choice2" class="btn btn-block btn-danger">
-                        Discuss with the other person to find a way that you can both
+                        Negotiate with the other person to find a way that you can both
                         survive.
                     </a>
                 </div>
@@ -207,7 +207,7 @@
                     <!--Second Choice-->
                     <span class="quote-text">"We don't need to fight..."</span>
                     <a href="#result6-stage3.3-choice2" class="btn btn-block btn-danger">
-                        Negotiate with the other person to find a way that you can both
+                        Request the other person to find a way that you can both
                         survive.
                     </a>
                 </div>
@@ -231,7 +231,7 @@
                     </a>
                     <p></p>
                     <!--Second Choice-->
-                    <span class="quote-text">"There is no way I can fight the other person..."</span>
+                    <span class="quote-text">"There is no way I can win this fight..."</span>
                     <a href="#result8-stage3.4-choice2" class="btn btn-block btn-danger">
                         Plead to the other person to find a way that you can both
                         survive.
@@ -244,25 +244,15 @@
         <!--Result Stage 1 Sheath to Eye-->
         <div id="result1-stage3.1-choice1" class="step slide" data-x="-6000" data-y="4500">
             <div class="slide-text">
-                <h2>Result1</h2>
+                <h2>The Residuum</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    As you bring the sheath closer to your eye, the darkness inside
+                    begins to rapidly swirl and suddenly expands!
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -270,25 +260,15 @@
         <!--Result Stage 2 Too Late-->
         <div id="result2-stage3.1-choice2" class="step slide" data-x="-4500" data-y="4500">
             <div class="slide-text">
-                <h2>Result2</h2>
+                <h2>The Empty Heart</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    As you arrive at the center of the island, you see the portal vanish into thin air. The other
+                    person just managed to arrive a moment earlier than you...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -296,25 +276,15 @@
         <!--Result Stage 3 Stalemate Fight-->
         <div id="result3-stage3.2-choice1" class="step slide" data-x="-3000" data-y="4500">
             <div class="slide-text">
-                <h2>Result3</h2>
+                <h2>The Fist Fight</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    You are evenly matched with the other person. You cannot overpower
+                    him/her and he/she cannot kill you too. It has become a stalemate...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -322,25 +292,15 @@
         <!--Result Stage 4 Enemy backstabs you-->
         <div id="result4-stage3.2-choice2" class="step slide" data-x="-1500" data-y="4500">
             <div class="slide-text">
-                <h2>Result4</h2>
+                <h2>The Negotiation</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    The other person agrees that they do not think they could beat you in a
+                    1-on-1 fight. They decide to think of a solution along with you...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -348,25 +308,15 @@
         <!--Result Stage 5 Kill Enemy-->
         <div id="result5-stage3.3-choice1" class="step slide" data-x="1500" data-y="4500">
             <div class="slide-text">
-                <h2>Result5</h2>
+                <h2>The Final Bout</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    With the Sword of Light in hand, you fend off the enemy's projectiles.
+                    As you quickly approach your target, you take a massive swing...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#win-game" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -374,25 +324,15 @@
         <!--Result Stage 6 Failed peaceful resolution-->
         <div id="result6-stage3.3-choice2" class="step slide" data-x="3000" data-y="4500">
             <div class="slide-text">
-                <h2>Result6</h2>
+                <h2>The Request</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    The other person gets on his/her knees and prostrates before you. "I
+                    will do anything you request of me! Please don't kill me o' mighty one!"
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -400,25 +340,16 @@
         <!--Result Stage 7 Enemy Kills you-->
         <div id="result7-stage3.4-choice1" class="step slide" data-x="4500" data-y="4500">
             <div class="slide-text">
-                <h2>Result7</h2>
+                <h2>The Butcher</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    As you run rampantly towards your prey, you manage to pick up a knife.
+                    The target quickly approaching is now right before your eyes. You take a
+                    massive swing for his/her neck...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -426,25 +357,16 @@
         <!--Result Stage 8 Enemy refuses to collaborate with you-->
         <div id="result8-stage3.4-choice2" class="step slide" data-x="6000" data-y="4500">
             <div class="slide-text">
-                <h2>Result8</h2>
+                <h2>The Sincere Plea</h2>
                 <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
+                    Knowing that the other person is much stronger than yourself, you prostrate yourself
+                    on the ground. You try to convince him/her that there may be a solution that can
+                    allow both of you to safely make it back home...
                 </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
-                    </a>
+                    <!--See the results-->
+                    <span class="quote-text">Find out your fate...</span>
+                    <a href="#game-over" class="btn btn-block btn-info">Next</a>
                 </div>
             </div>
         </div>
@@ -455,23 +377,12 @@
         <div id="game-over" class="step slide" data-x="-3000" data-y="6000">
             <div class="slide-text">
                 <h2>Game Over</h2>
-                <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
-                </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
+                <p id="game-over-body"></p>
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
+                    <!--Restart game-->
+                    <span class="quote-text">You have died.</span>
+                    <a href="#game" class="btn btn-block btn-danger">
+                        Click here to start over
                     </a>
                 </div>
             </div>
@@ -480,24 +391,13 @@
         <!--Win Stage-->
         <div id="win-game" class="step slide" data-x="3000" data-y="6000">
             <div class="slide-text">
-                <h2>Win</h2>
-                <p>
-                    ...Nothing happens.
-                    You become bored and do 20 push-ups. (+20 STR)<br />
-                </p>
-                <p>Then the light suddenly vanishes!</p>
-                What do you do?
+                <h2>Congratulations</h2>
+                <p id="win-game-body"></p>
                 <div class="menu">
-                    <!--First Choice-->
-                    <span class="quote-text">"What was that?"</span>
-                    <a href="#2" class="btn btn-block btn-warning">
-                        Head towards where the mysterious light was once shining from.
-                    </a>
-                    <p></p>
-                    <!--Second Choice-->
-                    <span class="quote-text">"Well this is getting boring..."</span>
-                    <a href="#3" class="btn btn-block btn-danger">
-                        Escape from the forest.
+                    <!--Play again-->
+                    <span class="quote-text">You win!</span>
+                    <a href="#game" class="btn btn-block btn-success">
+                        Click here to play again
                     </a>
                 </div>
             </div>
