@@ -58,12 +58,19 @@
                 strength = 90;
                 enemyStrength = 10;
                 hoursRemaining = 10;
+                evtLog = "You have " + hoursRemaining + " hours left before nuclear warheads are going to hit the island."
+                    + '<br /><br />' + evtLog;
                 evtLog = "Test messsage. Moved to stage: " + destination + '<br />------<br />' + evtLog;
+                //evtLog = "" + '<br />------<br />' + evtLog;
                 break;
 
             case "stage2.1-stage1-choice1":
+                hoursRemaining -= 3; // TEST
                 strength += 20; // from push-ups
                 enemyStrength += 100; // because you did not take sword, enemy did
+                evtLog = "You developed your muscles from doing push-ups.<br />[+20 STR]<br /><br />" + evtLog;
+                evtLog = "You have " + hoursRemaining + " hours left before nuclear warheads are going to hit the island."
+                    + '<br /><br />' + evtLog;
                 evtLog = "Test messsage. Moved to stage: " + destination + '<br />------<br />' + evtLog;
                 break;
 

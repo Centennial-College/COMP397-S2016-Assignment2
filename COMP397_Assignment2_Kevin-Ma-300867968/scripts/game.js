@@ -1,14 +1,14 @@
 /**
- *  File name: game.ts
- *  Author: Kevin Ma (Student #300867968)
- *
- *  Description: This is the main typescript file that controls all
- *               the functionalities of the web game.
- *
- *  Date Created: June 11, 2016
- *  Date Last Modified: June 12, 2016
- *  Version:  0.8 - added a overflow enabled scrolling events log
- */
+*  File name: game.ts
+*  Author: Kevin Ma (Student #300867968)
+*
+*  Description: This is the main typescript file that controls all
+*               the functionalities of the web game.
+*
+*  Date Created: June 11, 2016
+*  Date Last Modified: June 12, 2016
+*  Version:  0.8 - added a overflow enabled scrolling events log
+*/
 /// <reference path="typings/impress/impress.d.ts" />
 /**
  * This immediately invoked function expression (IIFE) will be used
@@ -49,11 +49,18 @@
                 strength = 90;
                 enemyStrength = 10;
                 hoursRemaining = 10;
+                evtLog = "You have " + hoursRemaining + " hours left before nuclear warheads are going to hit the island."
+                    + '<br /><br />' + evtLog;
                 evtLog = "Test messsage. Moved to stage: " + destination + '<br />------<br />' + evtLog;
+                //evtLog = "" + '<br />------<br />' + evtLog;
                 break;
             case "stage2.1-stage1-choice1":
+                hoursRemaining -= 3; // TEST
                 strength += 20; // from push-ups
                 enemyStrength += 100; // because you did not take sword, enemy did
+                evtLog = "You developed your muscles from doing push-ups.<br />[+20 STR]<br /><br />" + evtLog;
+                evtLog = "You have " + hoursRemaining + " hours left before nuclear warheads are going to hit the island."
+                    + '<br /><br />' + evtLog;
                 evtLog = "Test messsage. Moved to stage: " + destination + '<br />------<br />' + evtLog;
                 break;
             // Display the enemy's statistics due to encounter
@@ -76,3 +83,4 @@
     console.log(strength);
     console.log(hoursRemaining);
 })();
+//# sourceMappingURL=game.js.map
