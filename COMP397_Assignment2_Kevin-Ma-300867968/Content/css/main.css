@@ -6,10 +6,11 @@
                  for the web game, Game of Survival.
     
     Date Created: June 11, 2016
-    Date Last Modified: June 12, 2016
-    Version:  0.8.1 - modified panels to look like windows panels
+    Date Last Modified: June 13, 2016
+    Version:  1.1 - enhanced user usability and overall design
 */
 
+/* ----------------------------------ImpressJS CSS---------------------------------- */
 body {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
     background: rgb(30,87,153); /* Old browsers */
@@ -77,10 +78,11 @@ div.menu {
     text-align: center;
 }
 
+/* ----------------------------------Game Panels CSS---------------------------------- */
 /*Used to style the game status window*/
 .stats-display {
     float: right;
-    margin: 1vh 1vw;
+    margin: 10vh 1vw 1vh 1vw;
     background-color: white;
     color: black;
 }
@@ -119,6 +121,7 @@ div.menu {
     color: white;
 }
 
+/* ----------------------------------Text CSS---------------------------------- */
 h1 {
     font-size: 15vh;
     font-family: 'Times New Roman', Times, serif;
@@ -136,4 +139,33 @@ h2 {
 /*Used to style the in game options*/
 .option-links {
     font-size: 5vh;
+}
+
+/* ----------------------------------Navbar CSS---------------------------------- */
+/*blue theme*/
+nav{
+    background-color: #1976D2;
+}
+/*For navbar anchors*/
+nav a{
+    text-decoration: none;
+    color: #BBDEFB;
+}
+.navbar-brand{
+    /*top/bottom right/left*/
+    padding: 2px 25px;
+}
+.navbar-collapse{
+    background-color:#1976D2;
+}
+/*The toggle button*/
+.navbar-toggle{
+    background-color: #0F487F;
+}
+.navbar-toggle .icon-bar{
+    border: 1px solid #fff;
+}
+.navbar-fixed-top .active a { 
+      color:#000;
+      background: #fff;
 }

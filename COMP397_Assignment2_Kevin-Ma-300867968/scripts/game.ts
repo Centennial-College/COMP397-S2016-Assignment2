@@ -7,7 +7,7 @@
  *
  *  Date Created: June 11, 2016
  *  Date Last Modified: June 13, 2016
- *  Version:  1.0 - added all remaining events to display, initial release
+ *  Version:  1.1 - enhanced user usability and overall design
  */
 
 /// <reference path="typings/impress/impress.d.ts" />
@@ -195,7 +195,7 @@
                     'GAME OVER...' + '<br />' +
                     '=================================' + '<br />' +
                     'You have lived a valiant life but due to poor decisions made, you have died.' +
-                    '<br />Please try again!< br />------<br /><br />';
+                    '<br />Please try again!<br />------<br /><br />';
                 break;
 
             case "win-game":
@@ -203,7 +203,7 @@
                     'YOU WIN!' + '<br />' +
                     '=================================' + '<br />' +
                     'Through your determination and sheer willpower you have successfully made it out ' +
-                    'alive from the Game of Survival.<br />Do you dare to play again?< br />------<br /><br />';
+                    'alive from the Game of Survival.<br />Do you dare to play again?<br />------<br /><br />';
                 break;
 
         }
